@@ -36,7 +36,7 @@ const Navigation = () => {
           <div className="flex items-center gap-4">
             <Avatar className="h-12 w-12 border-2 border-white/20">
               <AvatarImage 
-                src="/my_image.JPG" 
+                src="/myimage.jpg" 
                 alt="Anurag Tripathi" 
               />
               <AvatarFallback className="bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold">

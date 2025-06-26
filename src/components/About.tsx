@@ -124,7 +124,7 @@ const About = () => {
                 <div className="absolute inset-4 rounded-full bg-gradient-to-r from-blue-400/20 to-purple-400/20 animate-spin-reverse"></div>
                 
                 <img 
-                  src="/my_image.JPG" 
+                  src="/myimage.jpg" 
                   alt="Anurag Tripathi" 
                   className="absolute inset-8 w-64 h-64 rounded-full object-cover border-4 border-white/20 shadow-2xl hover:scale-105 transition-transform duration-300"
                 />
