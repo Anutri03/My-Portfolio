@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -13,7 +12,8 @@ const Projects = () => {
       tech: ["Python", "XGBoost", "Streamlit", "Pandas", "Scikit-learn"],
       gradient: "from-red-500 to-orange-500",
       icon: "🛡️",
-      metrics: { accuracy: "99.6%", dataset: "284k transactions" }
+      metrics: { accuracy: "99.6%", dataset: "284k transactions" },
+      github: "https://github.com/Anutri03/Fraud_detection_ml"
     },
     {
       title: "Brain Tumor Detection",
@@ -22,7 +22,18 @@ const Projects = () => {
       tech: ["TensorFlow", "Keras", "CNN", "Flask", "OpenCV"],
       gradient: "from-blue-500 to-purple-500",
       icon: "🧠",
-      metrics: { accuracy: "95%", images: "3k+ MRI scans" }
+      metrics: { accuracy: "95%", images: "3k+ MRI scans" },
+      github: "https://github.com/Anutri03/Brain_tumor_detection"
+    },
+    {
+      title: "Clothing GAN",
+      category: "Deep Learning",
+      description: "Developed a GAN model to generate realistic images from random noise using deep convolutional neural networks, exploring advanced GAN architectures and training techniques",
+      tech: ["Python", "PyTorch", "DCGAN", "Numpy", "Matplotlib", "Google Colab"],
+      gradient: "from-purple-500 to-pink-500",
+      icon: "🎨",
+      metrics: { accuracy: "98%", images: "25k+ Images" },
+      github: "https://github.com/Anutri03/ClothingGAN"
     },
     {
       title: "Customer Churn Prediction",
@@ -31,7 +42,8 @@ const Projects = () => {
       tech: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
       gradient: "from-green-500 to-teal-500",
       icon: "📊",
-      metrics: { accuracy: "87%", features: "20+ variables" }
+      metrics: { accuracy: "87%", features: "20+ variables" },
+      github: "https://github.com/Anutri03/Churn_prediction"
     },
     {
       title: "Twitter Sentiment Analysis",
@@ -114,6 +126,7 @@ const Projects = () => {
                   <Button 
                     variant="outline" 
                     className="flex-1 border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white transition-colors group/btn"
+                    onClick={() => project.github && window.open(project.github, '_blank')}
                   >
                     <Eye className="mr-2 h-4 w-4 group-hover/btn:scale-110 transition-transform" />
                     View Details
@@ -122,6 +135,7 @@ const Projects = () => {
                     variant="ghost" 
                     size="icon"
                     className="border border-gray-600 hover:border-purple-500 hover:bg-purple-500/10"
+                    onClick={() => project.github && window.open(project.github, '_blank')}
                   >
                     <Github className="h-4 w-4" />
                   </Button>
